@@ -43,8 +43,9 @@
                     <strong>Get Started For Free <font-awesome-icon icon="fa-solid fa-arrow-right-long" /></strong>
                 </div>
             </div>
-            <div id="foto-p">
-                <img src="../assets/home-movation-hero-image.png" alt="">
+            <div class="foto-p">
+                <img id="img-tipo" src="../assets/home-movation-hero-image.png" alt="">
+                <img id="fiori" src="../assets/home-movation-shape-face-600x534.png" alt="">
             </div>
         </div>
     </div>
@@ -67,7 +68,7 @@ export default {
 <style scoped lang="scss">
     #header {
         background-image: url(../assets/background-pattern-wavify.png);
-        height: 700px;
+        position: relative;
 
         #sezione {
             width: 60%;
@@ -78,6 +79,7 @@ export default {
                 justify-content: space-between;
                 align-items: center;
                 color: rgba(107,103,136,255);
+                padding-top: 30px;
                 #logo {
                     img{
                         width: 200px;
@@ -101,30 +103,41 @@ export default {
 
             }
             .jumbo {
-                padding-top: 150px;
+                margin-top: 150px;
                 display: flex;
                 justify-content: flex-start;
                 
                 .text-p {
                     width: 450px;
+                    padding-bottom: 200px;
+                    h1 {
+                        font-size: 50px;
+                        padding: 20px 0;
+                    }
+                    #bottone {
+                        background-color: rgba(32,173,150,255);
+                        color: white;
+                        width: 250px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 5px;
+                        margin-top: 30px;
+                    }
                 }
-                h1 {
-                    font-size: 50px;
-                    padding: 20px 0;
-                }
-                #bottone {
-                    background-color: rgba(32,173,150,255);
-                    color: white;
-                    width: 250px;
-                    height: 50px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 5px;
-                    margin-top: 30px;
-                }
-                #foto-p {
-                    
+                .foto-p {
+                    #img-tipo {
+                        position: absolute;
+                        bottom: 0;
+                        right: 400px;
+                        z-index: 10;
+                    }
+                    #fiori {
+                       position: absolute;
+                        bottom: 0;
+                        right: 300px; 
+                    }
                 }
             }
 
