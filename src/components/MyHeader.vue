@@ -1,5 +1,19 @@
 <template>
   <div id="header">
+    <div id="bar-lat">
+        <div class="icon">
+            <font-awesome-icon icon="fa-solid fa-ruler"/>
+        </div>
+        <div class="icon">
+            <font-awesome-icon icon="fa-solid fa-life-ring" />
+        </div>
+        <div class="icon">
+            <font-awesome-icon icon="fa-solid fa-book" />
+        </div>
+        <div class="icon">
+            <font-awesome-icon icon="fa-solid fa-cart-shopping" />
+        </div>
+    </div>
     <div id="sezione">
         <div id="top-head">
             <div id="logo">
@@ -70,6 +84,22 @@ export default {
         background-image: url(../assets/background-pattern-wavify.png);
         position: relative;
 
+        #bar-lat {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: rgb(234, 233, 233);
+            position: absolute;
+            right: 0;
+            top: 250px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius:  10px;
+
+            .icon {
+                padding: 10px;
+            }
+        }
+
         #sezione {
             width: 60%;
             margin: auto;  
@@ -124,6 +154,9 @@ export default {
                         align-items: center;
                         border-radius: 5px;
                         margin-top: 30px;
+                    }
+                    #bottone:hover {
+                        background-color: rgba(63,58,100,255);
                     }
                 }
                 .foto-p {
