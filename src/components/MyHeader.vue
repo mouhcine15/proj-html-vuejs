@@ -1,5 +1,6 @@
 <template>
   <div id="header">
+    <!-- barra dele icone laterali del jumbo -->
     <div id="bar-lat">
         <div class="icon">
             <font-awesome-icon icon="fa-solid fa-ruler"/>
@@ -15,6 +16,7 @@
         </div>
     </div>
     <div id="sezione">
+        <!-- parte alta del header con logi e navbar  -->
         <div id="top-head">
             <div id="logo">
                 <img src="../assets/dark-logo.png" alt="">
@@ -42,7 +44,9 @@
                 </div>
             </div>
         </div>
+        <!-- jumbotron -->
         <div class="jumbo">
+            <!-- testo laterale -->
             <div class="text-p">
                 <h3>
                     I'M WINGMAN
@@ -57,6 +61,7 @@
                     <strong>Get Started For Free <font-awesome-icon icon="fa-solid fa-arrow-right-long" /></strong>
                 </div>
             </div>
+            <!-- immagini in absolute  -->
             <div class="foto-p">
                 <img id="img-tipo" src="../assets/home-movation-hero-image.png" alt="">
                 <img id="fiori" src="../assets/home-movation-shape-face-600x534.png" alt="">
