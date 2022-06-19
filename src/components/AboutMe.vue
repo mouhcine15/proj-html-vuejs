@@ -13,7 +13,7 @@
 <!-- parte sinistra di testo  -->
         <div class="width-55-perc">
             <h3><strong>Want tolearn hoe to be <p class="green-color disp-inline">an alpha male</p>? How to be more masculine? How to be the man you've always wanted to be?</strong></h3>
-            <div class="margin-top-30">
+            <div class="margin-top-30 grey">
                 Your goal is to show the consistency of business, core values, and customer care. Puctuality, responsability, individuality, accurcy, enthusiasm - you have to clearly explain how these qualities are applicable to your work. And the important thing is you do love what you do.
             </div>
         </div>
@@ -21,7 +21,7 @@
     <div class="margin-top-100 just-start align-center">
 <!-- immagine con player YouTube -->
             <div>
-                <img src="../assets/home-movation-video-poster-670x450.jpg" alt="">
+                <img class="radius-5" src="../assets/home-movation-video-poster-670x450.jpg" alt="">
             </div>
             <div class="padding-50">
                 <h2>
@@ -32,8 +32,8 @@
                     <h3 class="margin-top-20">
                         Kaixa Stark
                     </h3>
-                    <div class="margin-top-20">
-                        WINGMAN
+                    <div class="margin-top-20 grey">
+                        <strong>WINGMAN</strong>
                     </div>
                 </div>
 
@@ -60,6 +60,9 @@ export default {
 // COLORI 
    .green-color {
     color: rgb(32,173,150);
+   }
+   .grey {
+    color: grey;
    }
 
 // MARGINI-PADDING
@@ -107,5 +110,9 @@ export default {
     .disp-inline {
         display: flex;
         display: inline;
+    }
+// BORDER RADIUS
+    .radius-5 {
+        border-radius: 5px;
     }
 </style>

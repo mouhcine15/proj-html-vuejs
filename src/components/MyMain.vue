@@ -13,17 +13,21 @@
     </div>
     <!-- sezione di AboutMe - presentazione -->
     <AboutMe/>
+    <!-- sezione di Latest Online Courses - corsi -->
+    <LatestCourses/>
 
   </div>
 </template>
 
 <script>
 import AboutMe from './AboutMe.vue';
+import LatestCourses from './LatestCourses.vue';
 export default {
     name: "MyMain",
-    components: { 
-        AboutMe 
-    },
+    components: {
+    AboutMe,
+    LatestCourses
+},
     data () {
       return {
           stats: [

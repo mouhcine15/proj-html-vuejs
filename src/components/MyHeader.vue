@@ -86,19 +86,20 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     #header {
-        background-image: url(../assets/background-pattern-wavify.png);
+        background-image: linear-gradient(rgba(170, 170, 170, 0.1), rgba(170, 170, 170, 0.1)), url(../assets/background-pattern-wavify.png);
         position: relative;
 
         #bar-lat {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            background-color: rgb(234, 233, 233);
+            background-color: rgb(250, 250, 250);
             position: absolute;
             right: 0;
             top: 250px;
             border-bottom-left-radius: 10px;
             border-top-left-radius:  10px;
+            box-shadow: 0px 0px 15px 15px rgb(237, 236, 236);
 
             .icon {
                 padding: 10px;
