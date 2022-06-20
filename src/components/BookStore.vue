@@ -152,42 +152,15 @@ export default {
     .margin-top-30 {
         margin-top: 30px;
     }
-    .margin-top-50 {
-        margin-top: 50px;
-    }
-    .margin-top-100 {
-        margin-top: 100px;
-    }
-    .padding-50 {
-        padding: 50px;
-    }
     .pad-right-20 {
         padding-left: 20px;
     }
-    .pad-top-10 {
-        padding-top: 10px;
-    }
-    .pad-top-30 {
-        padding-top: 30px;
-    }
-    .pad-bot {
-        padding-bottom: 30px;
-    }
 // WIDTH 
-    .width-200 {
-        width: 200px;
-    }
     .width-300 {
         width: 300px;
     }
     .width-40-perc {
         width: 40%;
-    }
-    .width-50-perc {
-        width: 50%;
-    }
-    .width-100-perc {
-        width: 100%;
     }
 
 // FONT 
@@ -198,10 +171,6 @@ export default {
         font-size: 45px;
     }
 // FLEX
-    .just-start {
-        display: flex;
-        justify-content: flex-start;
-    }
     .just-between {
         display: flex;
         justify-content: space-between;
@@ -210,41 +179,16 @@ export default {
         display: flex;
         justify-content: center;
     }
-    .just-around {
-        display: flex;
-        justify-content: space-around;
-    }
     .align-center {
         display: flex;
         align-items: center;
-    }
-    .wrap {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .flex-verticale {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
     }
 // DISPLAY
     .disp-inline {
         display: inline;
     }
-    .disp-none {
-        display: none;
-    }
 // POSITION 
     .relative {
         position: relative;
-    }
-    .absolute {
-        position: absolute;
-        top: 70px;
-        right: 10px
-    }
-// BORDER RADIUS
-    .radius-5 {
-        border-radius: 5px;
     }
 </style>
