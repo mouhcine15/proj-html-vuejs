@@ -15,6 +15,8 @@
     <AboutMe/>
     <!-- sezione di Latest Online Courses - corsi -->
     <LatestCourses/>
+    <!-- sezone del Book store -->
+    <BookStore/>
 
   </div>
 </template>
@@ -22,11 +24,13 @@
 <script>
 import AboutMe from './AboutMe.vue';
 import LatestCourses from './LatestCourses.vue';
+import BookStore from './BookStore.vue';
 export default {
     name: "MyMain",
     components: {
     AboutMe,
-    LatestCourses
+    LatestCourses,
+    BookStore
 },
     data () {
       return {

@@ -135,17 +135,8 @@ export default {
     .margin-top-20 {
         margin-top: 20px;
     }
-    .margin-top-30 {
-        margin-top: 30px;
-    }
     .margin-top-50 {
         margin-top: 50px;
-    }
-    .margin-top-100 {
-        margin-top: 100px;
-    }
-    .padding-50 {
-        padding: 50px;
     }
     .pad-left-20 {
         padding-left: 20px;
@@ -163,12 +154,6 @@ export default {
     .width-360 {
         width: 360px;
     }
-    .width-40-perc {
-        width: 40%;
-    }
-    .width-55-perc {
-        width: 55%;
-    }
     .width-100-perc {
         width: 100%;
     }
@@ -185,17 +170,9 @@ export default {
         display: flex;
         justify-content: flex-start;
     }
-    .just-between {
-        display: flex;
-        justify-content: space-between;
-    }
     .just-center {
         display: flex;
         justify-content: center;
-    }
-    .align-center {
-        display: flex;
-        align-items: center;
     }
     .wrap {
         display: flex;
