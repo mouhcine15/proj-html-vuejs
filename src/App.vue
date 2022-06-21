@@ -17,7 +17,7 @@ export default {
     MyHeader,
     MyMain,
     MyFooter
-}
+  },
 }
 </script>
 

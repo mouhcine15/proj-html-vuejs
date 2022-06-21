@@ -50,8 +50,13 @@
                 </div>
             </div>
 <!-- copyright  -->
-            <div class="grey text-center pad-top-bot-50">
+            <div class="grey text-center pad-top-50">
                 <font-awesome-icon icon="fa-regular fa-copyright" /> 2020 Maxcoach. All Rights Reserved
+            </div>
+        </div>
+        <div class="bottone" @click="scrollToTop()">
+            <div>
+                <font-awesome-icon icon="fa-solid fa-arrow-up" />
             </div>
         </div>
     </div>
@@ -85,12 +90,38 @@ export default {
                 'Terms of service'
             ],
         }
-    }
+    },
+    methods: {
+      scrollToTop() {
+        scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      },
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+    .bottone {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+    }
+    .bottone div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(32,173,150);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        font-size: 18px;
+    }
+
     .icone {
         font-size: 25px;
         padding-right: 30px;
@@ -126,6 +157,9 @@ export default {
     }
     .pad-top-bot-50 {
         padding: 50px 0;
+    }
+    .pad-top-50 {
+        padding-top: 50px;
     }
 // WIDTH 
     .width-50-perc {
