@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div id="main">
+    <div class="main">
       <!-- statistiche e prestazioni -->
       <div id="stats">
           <div class="card" v-for="(item, i) in stats" :key="i">
@@ -19,8 +19,13 @@
       <!-- sezone del Book store -->
       <BookStore/>
     </div>
-      <!-- sezione del Carousel -->
-      <RealStories/>
+    <!-- sezione del Carousel -->
+    <RealStories/>
+    <div class="main">
+    <!-- sezione del Blog -->
+        <BlogUpdate/>
+    </div>
+
 </div>
 
 </template>
@@ -30,13 +35,15 @@ import AboutMe from './AboutMe.vue';
 import LatestCourses from './LatestCourses.vue';
 import BookStore from './BookStore.vue';
 import RealStories from './RealStories.vue';
+import BlogUpdate from './BlogUpdate.vue';
 export default {
     name: "MyMain",
     components: {
     AboutMe,
     LatestCourses,
     BookStore,
-    RealStories
+    RealStories,
+    BlogUpdate
 },
     data () {
       return {
@@ -65,7 +72,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-   #main {
+   .main {
     width: 60%;
     margin: auto;
     margin-top: 100px;
