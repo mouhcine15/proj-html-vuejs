@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="controller">
-            <div class="grey">
+            <div @click="nextslide()" class="grey">
                 <font-awesome-icon icon="fa-solid fa-caret-up" />
             </div>
             <div>
@@ -26,7 +26,7 @@
                 <font-awesome-icon icon="fa-solid fa-sort-down" />
             </div>
         </div>
-        <div id="right-side" @click="nextslide()">
+        <div id="right-side">
             
         </div>
     </div>
@@ -46,22 +46,22 @@ export default {
                     profession: '/ FreeLancer'
                 },
                 {
-                    text: 'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.',
-                    img: require('../assets/testimonial-avata-02.jpg'),
-                    name: 'Mina Hollace',
-                    profession: '/ FreeLancer'
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+                    img: require('../assets/testimonial-avata-03.jpg'),
+                    name: 'Tom Shelby',
+                    profession: '/ Software Engeneer'
                 },
                 {
-                    text: 'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.',
-                    img: require('../assets/testimonial-avata-02.jpg'),
-                    name: 'Mina Hollace',
-                    profession: '/ FreeLancer'
+                    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.',
+                    img: require('../assets/testimonial-avata-04.jpg'),
+                    name: 'Albert Morris',
+                    profession: '/ Actor'
                 },
                 {
-                    text: 'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.',
-                    img: require('../assets/testimonial-avata-02.jpg'),
-                    name: 'Mina Hollace',
-                    profession: '/ FreeLancer'
+                    text: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.',
+                    img: require('../assets/testimonial-avata-01.jpg'),
+                    name: 'Nelson Hopkins',
+                    profession: '/ Architect'
                 },
             ],
             attivazione: 0,
