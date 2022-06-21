@@ -1,5 +1,6 @@
 <template>
     <div class="section just-start relative">
+<!-- parte di sinistra che deve cambiare -->
         <div id="left-side" class="text-center">
             <h2 class="green margin-top-100">REAL STORIES</h2>
             <div class="margin-top-70">
@@ -15,6 +16,7 @@
                 </div>
             </div>
         </div>
+<!-- pulsanti conrollo del carousel -->
         <div class="controller">
             <div @click="nextslide()" class="grey">
                 <font-awesome-icon icon="fa-solid fa-caret-up" />
@@ -26,8 +28,7 @@
                 <font-awesome-icon icon="fa-solid fa-sort-down" />
             </div>
         </div>
-        <div id="right-side">
-            
+        <div id="right-side">   
         </div>
     </div>
 </template>

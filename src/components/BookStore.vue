@@ -1,9 +1,11 @@
 <template>
 <div>
     <div class="section just-between">
+<!-- parte di sinistra con la lista -->
       <div class="width-40-perc">
           <h4 class="grey">BOOK STORE ONLINE</h4>
           <div class="font-size-45 margin-top-30">Be Alpha With <p class="green disp-inline">Wingman's Book</p></div>
+<!-- lista -->
           <div>
               <ul id="list" class="margin-top-30">
                   <li class="margin-top-20">
@@ -32,28 +34,35 @@
                   </li>
               </ul>
           </div>
+<!-- bottone  -->
           <div id="bottone">
               <strong>Get Free Ebook</strong>
           </div>
       </div>
+<!-- parte di destra con i libri -->
       <div class="just-between">
-          <div class="pad-right-20 text-center relative card" v-for="(item, i) in books" :key="i">
-              <img class="width-300" :src="item.img" alt="">
-              <div class="margin-top-20">
-                  <strong>{{item.title}}</strong>
-              </div>
-              <div class="green font-size-20 margin-top-20">
-                  <strong>{{item.price}}</strong>
-              </div>
-              <div class="icone-card">
-                  <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="icona" />
-                  <font-awesome-icon icon="fa-solid fa-cart-shopping" class="icona"/>
-                  <font-awesome-icon icon="fa-regular fa-heart" class="icona"/>
-                  <font-awesome-icon icon="fa-solid fa-signal" class="icona"/>
-              </div>
+<!-- libri  -->
+          <div class="pad-right-20 text-center relative" v-for="(item, i) in books" :key="i">
+            <div class="card">
+                <img class="width-300" :src="item.img" alt="">
+                <div class="margin-top-20">
+                    <strong>{{item.title}}</strong>
+                </div>
+                <div class="green font-size-20 margin-top-20">
+                    <strong>{{item.price}}</strong>
+                </div>
+            </div>
+<!-- icone che devono comparire -->
+            <div class="icone-card">
+                <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="icona" />
+                <font-awesome-icon icon="fa-solid fa-cart-shopping" class="icona"/>
+                <font-awesome-icon icon="fa-regular fa-heart" class="icona"/>
+                <font-awesome-icon icon="fa-solid fa-signal" class="icona"/>
+            </div>
           </div>
       </div>
     </div>
+<!-- sezione con le aziende partner -->
     <div class="section align-center just-center">
         <img src="../assets/client-logo-05-primary.png" alt="">
         <img src="../assets/client-logo-06-primary.png" alt="">
@@ -108,6 +117,13 @@ export default {
     #bottone:hover {
         background-color: rgba(63,58,100,255);
     }
+    .card {
+        z-index: 2;
+        position: relative;
+    }
+    .card:hover {
+        z-index: 0;
+    }
     .icone-card {
         position: absolute;
         top: 60px;
@@ -116,11 +132,17 @@ export default {
         flex-direction: column;
         justify-content: flex-start;
     }
+    .icone-card:hover {
+        z-index: 2;
+    }
     .icone-card .icona {
         background-color: white;
         border-radius: 50%;
         padding: 10px;
         margin: 5px;
+    }
+    .icona:hover {
+        transform: scale(1.2);
     }
 
     .align-center img {

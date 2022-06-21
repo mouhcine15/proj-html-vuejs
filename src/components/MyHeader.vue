@@ -104,6 +104,9 @@ export default {
             .icon {
                 padding: 10px;
             }
+            .icon:hover {
+                transform: scale(1.3);
+            }
         }
 
         #sezione {
@@ -149,6 +152,9 @@ export default {
                     h1 {
                         font-size: 50px;
                         padding: 20px 0;
+                    }
+                    h3 {
+                        color: rgb(99, 99, 99);
                     }
                     #bottone {
                         background-color: rgba(32,173,150,255);

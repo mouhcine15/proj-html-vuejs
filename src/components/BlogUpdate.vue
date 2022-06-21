@@ -4,8 +4,10 @@
             <h4 class="grey">BLOG UPDATED</h4>
           <div class="font-size-45 margin-top-30">Interesting<p class="green disp-inline"> articles updated</p> daily</div>
         </div>
+<!-- sezione delle card  -->
         <div class="just-between margin-top-50">
-            <div class="width-200" v-for="(item, i) in articles" :key="i">
+<!-- card  -->
+            <div class="width-200 card" v-for="(item, i) in articles" :key="i">
                 <img class="width-100-perc radius-5" :src="item.img" alt="">
                 <div>
                     <div class="grey margin-top-20">
@@ -20,7 +22,8 @@
                 </div>
             </div>
         </div>
-        <div class="green underline text-center margin-top-50">
+<!-- link View More -->
+        <div class="green underline text-center margin-top-50 bigger-1-1">
             <h3>VIEW ALL POSTS</h3>
         </div>
     </div>
@@ -88,9 +91,6 @@ export default {
    }
 
 // MARGINI-PADDING
-    .margin-auto {
-        margin: auto;
-    }
     .margin-top-20 {
         margin-top: 20px;
     }
@@ -100,97 +100,33 @@ export default {
     .margin-top-50 {
         margin-top: 50px;
     }
-    .margin-top-100 {
-        margin-top: 100px;
-    }
-    .padding-50 {
-        padding: 50px;
-    }
-    .pad-right-20 {
-        padding-left: 20px;
-    }
-    .pad-top-10 {
-        padding-top: 10px;
-    }
-    .pad-top-30 {
-        padding-top: 30px;
-    }
-    .pad-bot {
-        padding-bottom: 30px;
-    }
 // WIDTH 
-    .width-80 {
-        width: 80px;
-    }
     .width-200 {
         width: 260px;
-    }
-    .width-40-perc {
-        width: 40%;
-    }
-    .width-50-perc {
-        width: 50%;
     }
     .width-100-perc {
         width: 100%;
     }
 
 // FONT 
-    .font-size-20 {
-        font-size: 20px;
-    }
     .font-size-45 {
         font-size: 45px;
     }
 // FLEX
-    .just-start {
-        display: flex;
-        justify-content: flex-start;
-    }
     .just-between {
         display: flex;
         justify-content: space-between;
-    }
-    .just-center {
-        display: flex;
-        justify-content: center;
-    }
-    .just-around {
-        display: flex;
-        justify-content: space-around;
-    }
-    .align-center {
-        display: flex;
-        align-items: center;
-    }
-    .wrap {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .flex-verticale {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
     }
 // DISPLAY
     .disp-inline {
         display: inline;
     }
-    .disp-none {
-        display: none;
-    }
-// POSITION 
-    .relative {
-        position: relative;
-    }
-    .absolute {
-        position: absolute;
-    }
 // BORDER RADIUS
     .radius-5 {
         border-radius: 5px;
     }
-    .radius-50-perc {
-        border-radius: 50%;
+// BIGGER
+    .bigger-1-1:hover {
+        transform: scale(1.1);
     }
 </style>
